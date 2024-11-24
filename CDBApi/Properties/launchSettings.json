@@ -1,0 +1,14 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "CDBApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger/ui/index",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5050"
+    }
+  }
+}

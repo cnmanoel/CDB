@@ -1,0 +1,110 @@
+[
+    {
+        "test_name": "Prazo de At\u00e9 6 Meses (Taxa: 22,5%)",
+        "request": {
+            "initialValue": 1000,
+            "months": 6
+        },
+        "expected_response": {
+            "grossValue": 1059.76,
+            "netValue": 1046.31
+        }
+    },
+    {
+        "test_name": "Prazo de At\u00e9 12 Meses (Taxa: 20%)",
+        "request": {
+            "initialValue": 1500,
+            "months": 12
+        },
+        "expected_response": {
+            "grossValue": 1684.62,
+            "netValue": 1647.7
+        }
+    },
+    {
+        "test_name": "Prazo de 13 Meses (Taxa: 17,5%)",
+        "request": {
+            "initialValue": 2000,
+            "months": 13
+        },
+        "expected_response": {
+            "grossValue": 2268.0,
+            "netValue": 2221.1
+        }
+    },
+    {
+        "test_name": "Prazo de 24 Meses (Taxa: 17,5%)",
+        "request": {
+            "initialValue": 2500,
+            "months": 24
+        },
+        "expected_response": {
+            "grossValue": 3153.28,
+            "netValue": 3038.96
+        }
+    },
+    {
+        "test_name": "Prazo de 25 Meses (Taxa: 15%)",
+        "request": {
+            "initialValue": 1500,
+            "months": 25
+        },
+        "expected_response": {
+            "grossValue": 1910.36,
+            "netValue": 1848.81
+        }
+    },
+    {
+        "test_name": "Prazo Curto, Valor Baixo",
+        "request": {
+            "initialValue": 500,
+            "months": 3
+        },
+        "expected_response": {
+            "grossValue": 514.72,
+            "netValue": 511.41
+        }
+    },
+    {
+        "test_name": "Prazo Longo, Valor Alto",
+        "request": {
+            "initialValue": 10000,
+            "months": 36
+        },
+        "expected_response": {
+            "grossValue": 14165.58,
+            "netValue": 13540.74
+        }
+    },
+    {
+        "test_name": "Valor Inicial Inv\u00e1lido",
+        "request": {
+            "initialValue": -1000,
+            "months": 12
+        },
+        "expected_response": {
+            "error": "Invalid input values."
+        }
+    },
+    {
+        "test_name": "Prazo Inv\u00e1lido",
+        "request": {
+            "initialValue": 1000,
+            "months": 0
+        },
+        "expected_response": {
+            "error": "Invalid input values."
+        }
+    },
+    {
+        "test_name": "Prazo de 30 Meses (Taxa: 15%)",
+        "request": {
+            "initialValue": 3000,
+            "months": 30
+        },
+        "expected_response": {
+            "grossValue": 4010.05,
+            "netValue": 3858.54
+        }
+    }
+]
